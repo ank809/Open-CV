@@ -28,7 +28,7 @@ ball = img1[280:340, 330:390]
 # This line replaces another rectangular region in the img image with the content stored in the ball variable.
 # Similar to the previous line, it defines a rectangular region with coordinates (273, 100) as the top-left corner and (332, 159) as the bottom-right corner.
 # The content of the ball variable (the region previously extracted from the image) is then assigned to this rectangular region in img.
-img1[273:333, 100:160]= ball
+img1[273:333, 100:160] = ball
 
 #  if you want to resize an image
 img1= c.resize(img1, (512, 512))

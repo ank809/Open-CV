@@ -6,6 +6,7 @@ cap= cv2.VideoCapture(0)
 print(cap)
 
 # for writing a video foucc is four color code
+# fourcc= cv2.VideoWriter.fourcc('X' ,'V' ,'I', 'D')
 fourcc= cv2.VideoWriter.fourcc(*'XVID')
 print(fourcc)
 out= cv2.VideoWriter('video1.avi', fourcc, 20.0, (720, 528))
