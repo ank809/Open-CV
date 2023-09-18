@@ -33,6 +33,7 @@ while True:
     # l_b= np.array([95,116,50])
     # u_b= np.array([130,255,255])
 
+    # it will focus on the object you want to detect and make others black
     mask= cv2.inRange(hsv, l_b, u_b)
     res= cv2.bitwise_and(frame, frame, mask=mask)
 
